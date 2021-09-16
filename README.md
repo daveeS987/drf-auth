@@ -42,15 +42,15 @@ python -c 'from django.core.management.utils import get_random_secret_key; \
 SECRET_KEY = "django-insecure-INSERT_NEW_SECRET_KEY_HERE"
 ```
 
-### 4. App folder currently named "Example". Replace this with your app name
+### 4. App folder currently named "Movie". Replace this with your app name
 
-- These steps will change the app name and all occurences of "Example"
-- Do a global search of "Example" and replace all occurences with your new app name
-  - (For this step your app name needs to be a capital word) ex Example -> Blog
+- These steps will change the app name and all occurences of "Movie"
+- Do a global search of "Movie" and replace all occurences with your new app name
+  - (For this step your app name needs to be a capital word) ex Movie -> Blog
   - Make sure to select "Match Case" option. [Aa]
   - (There will only be 36 matches. If you see 42, you didn't check your case)
 - The following steps requires a lowercase version of your app name(4 places you have to change)
-  - Replace "Example" folder name
+  - Replace "Movie" folder name
   - In app.py - line 6, make sure name variable is lowercase
   - In project/urls.py, fix urlpatterns on line 19 to use lowercase
   - In project/settings.py check INSTALLED_APPS to make sure your app name is lowercased
