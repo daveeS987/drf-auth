@@ -44,7 +44,7 @@ docker-compose run web python manage.py createsuperuser
 - Sign in with http to token route. This will give us access and refresh tokens
 
 ```iterm
-http POST :8000/api/token/ username='admin@gmail.com' password='admin'
+http POST :8000/api/token/ email='admin@gmail.com' password='admin'
 ```
 
 - Use access token to go to certain routes
